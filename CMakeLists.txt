@@ -122,7 +122,7 @@ catkin_package(
 include_directories(
         ${OpenCV_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
-  /opt/pylon5/include
+  /opt/pylon/include
 )
 
 ## Declare a C++ library
@@ -134,7 +134,7 @@ include_directories(
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-LINK_DIRECTORIES(/opt/pylon5/lib64)
+LINK_DIRECTORIES(/opt/pylon/lib)
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
@@ -156,118 +156,100 @@ add_executable(${PROJECT_NAME}_node_3 src/pylon_ros_node_3.cpp)
 target_link_libraries(${PROJECT_NAME}_node_1
    ${catkin_LIBRARIES}
         ${OpenCV_LIBS}
-        /opt/pylon5/lib64/libbxapi-5.2.0.so
-/opt/pylon5/lib64/libbxapi.so
-/opt/pylon5/lib64/libFirmwareUpdate_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libGCBase_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libGCBase_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libGenApi_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libGenApi_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libgxapi-5.2.0.so
-/opt/pylon5/lib64/libgxapi.so
-/opt/pylon5/lib64/liblog4cpp_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libLog_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libLog_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libMathParser_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libMathParser_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libNodeMapData_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libNodeMapData_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libpylonbase-5.2.0.so
-/opt/pylon5/lib64/libpylonbase.so
-/opt/pylon5/lib64/libpylonc-5.2.0.so
-/opt/pylon5/lib64/libpylonc.so
-/opt/pylon5/lib64/libpylon_TL_bcon-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_bcon.so
-/opt/pylon5/lib64/libpylon_TL_camemu-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_camemu.so
-/opt/pylon5/lib64/libpylon_TL_gige-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_gige.so
-/opt/pylon5/lib64/libpylon_TL_usb-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_usb.so
-/opt/pylon5/lib64/libpylonutility-5.2.0.so
-/opt/pylon5/lib64/libpylonutility.so
-/opt/pylon5/lib64/libuxapi-5.2.0.so
-/opt/pylon5/lib64/libuxapi.so
-/opt/pylon5/lib64/libXmlParser_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libXmlParser_gcc_v3_1_Basler_pylon.so
+        /opt/pylon/lib/libbxapi-6.1.1.so
+/opt/pylon/lib/libbxapi.so
+/opt/pylon/lib/libFirmwareUpdate_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libGCBase_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libGenApi_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libgxapi-6.1.1.so
+/opt/pylon/lib/libgxapi.so
+/opt/pylon/lib/liblog4cpp_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libLog_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libMathParser_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libNodeMapData_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libpylonbase-6.1.1.so
+/opt/pylon/lib/libpylonbase.so
+/opt/pylon/lib/libpylonc-6.1.1.so
+/opt/pylon/lib/libpylonc.so
+/opt/pylon/lib/libpylon_TL_bcon-6.1.1.so
+/opt/pylon/lib/libpylon_TL_bcon.so
+/opt/pylon/lib/libpylon_TL_camemu-6.1.1.so
+/opt/pylon/lib/libpylon_TL_camemu.so
+/opt/pylon/lib/libpylon_TL_gige-6.1.1.so
+/opt/pylon/lib/libpylon_TL_gige.so
+/opt/pylon/lib/libpylon_TL_usb-6.1.1.so
+/opt/pylon/lib/libpylon_TL_usb.so
+/opt/pylon/lib/libpylonutility-6.1.1.so
+/opt/pylon/lib/libpylonutility.so
+/opt/pylon/lib/libuxapi-6.1.1.so
+/opt/pylon/lib/libuxapi.so
+/opt/pylon/lib/libXmlParser_gcc_v3_1_Basler_pylon.so
  )
 
 target_link_libraries(${PROJECT_NAME}_node_2
    ${catkin_LIBRARIES}
         ${OpenCV_LIBS}
-        /opt/pylon5/lib64/libbxapi-5.2.0.so
-/opt/pylon5/lib64/libbxapi.so
-/opt/pylon5/lib64/libFirmwareUpdate_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libGCBase_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libGCBase_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libGenApi_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libGenApi_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libgxapi-5.2.0.so
-/opt/pylon5/lib64/libgxapi.so
-/opt/pylon5/lib64/liblog4cpp_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libLog_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libLog_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libMathParser_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libMathParser_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libNodeMapData_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libNodeMapData_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libpylonbase-5.2.0.so
-/opt/pylon5/lib64/libpylonbase.so
-/opt/pylon5/lib64/libpylonc-5.2.0.so
-/opt/pylon5/lib64/libpylonc.so
-/opt/pylon5/lib64/libpylon_TL_bcon-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_bcon.so
-/opt/pylon5/lib64/libpylon_TL_camemu-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_camemu.so
-/opt/pylon5/lib64/libpylon_TL_gige-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_gige.so
-/opt/pylon5/lib64/libpylon_TL_usb-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_usb.so
-/opt/pylon5/lib64/libpylonutility-5.2.0.so
-/opt/pylon5/lib64/libpylonutility.so
-/opt/pylon5/lib64/libuxapi-5.2.0.so
-/opt/pylon5/lib64/libuxapi.so
-/opt/pylon5/lib64/libXmlParser_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libXmlParser_gcc_v3_1_Basler_pylon.so
+                      /opt/pylon/lib/libbxapi-6.1.1.so
+/opt/pylon/lib/libbxapi.so
+/opt/pylon/lib/libFirmwareUpdate_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libGCBase_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libGenApi_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libgxapi-6.1.1.so
+/opt/pylon/lib/libgxapi.so
+/opt/pylon/lib/liblog4cpp_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libLog_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libMathParser_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libNodeMapData_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libpylonbase-6.1.1.so
+/opt/pylon/lib/libpylonbase.so
+/opt/pylon/lib/libpylonc-6.1.1.so
+/opt/pylon/lib/libpylonc.so
+/opt/pylon/lib/libpylon_TL_bcon-6.1.1.so
+/opt/pylon/lib/libpylon_TL_bcon.so
+/opt/pylon/lib/libpylon_TL_camemu-6.1.1.so
+/opt/pylon/lib/libpylon_TL_camemu.so
+/opt/pylon/lib/libpylon_TL_gige-6.1.1.so
+/opt/pylon/lib/libpylon_TL_gige.so
+/opt/pylon/lib/libpylon_TL_usb-6.1.1.so
+/opt/pylon/lib/libpylon_TL_usb.so
+/opt/pylon/lib/libpylonutility-6.1.1.so
+/opt/pylon/lib/libpylonutility.so
+/opt/pylon/lib/libuxapi-6.1.1.so
+/opt/pylon/lib/libuxapi.so
+/opt/pylon/lib/libXmlParser_gcc_v3_1_Basler_pylon.so
  )
 
 target_link_libraries(${PROJECT_NAME}_node_3
    ${catkin_LIBRARIES}
         ${OpenCV_LIBS}
-        /opt/pylon5/lib64/libbxapi-5.2.0.so
-/opt/pylon5/lib64/libbxapi.so
-/opt/pylon5/lib64/libFirmwareUpdate_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libGCBase_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libGCBase_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libGenApi_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libGenApi_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libgxapi-5.2.0.so
-/opt/pylon5/lib64/libgxapi.so
-/opt/pylon5/lib64/liblog4cpp_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libLog_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libLog_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libMathParser_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libMathParser_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libNodeMapData_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libNodeMapData_gcc_v3_1_Basler_pylon.so
-/opt/pylon5/lib64/libpylonbase-5.2.0.so
-/opt/pylon5/lib64/libpylonbase.so
-/opt/pylon5/lib64/libpylonc-5.2.0.so
-/opt/pylon5/lib64/libpylonc.so
-/opt/pylon5/lib64/libpylon_TL_bcon-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_bcon.so
-/opt/pylon5/lib64/libpylon_TL_camemu-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_camemu.so
-/opt/pylon5/lib64/libpylon_TL_gige-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_gige.so
-/opt/pylon5/lib64/libpylon_TL_usb-5.2.0.so
-/opt/pylon5/lib64/libpylon_TL_usb.so
-/opt/pylon5/lib64/libpylonutility-5.2.0.so
-/opt/pylon5/lib64/libpylonutility.so
-/opt/pylon5/lib64/libuxapi-5.2.0.so
-/opt/pylon5/lib64/libuxapi.so
-/opt/pylon5/lib64/libXmlParser_gcc_v3_1_Basler_pylon_v5_1.so
-/opt/pylon5/lib64/libXmlParser_gcc_v3_1_Basler_pylon.so
+                       /opt/pylon/lib/libbxapi-6.1.1.so
+/opt/pylon/lib/libbxapi.so
+/opt/pylon/lib/libFirmwareUpdate_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libGCBase_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libGenApi_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libgxapi-6.1.1.so
+/opt/pylon/lib/libgxapi.so
+/opt/pylon/lib/liblog4cpp_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libLog_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libMathParser_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libNodeMapData_gcc_v3_1_Basler_pylon.so
+/opt/pylon/lib/libpylonbase-6.1.1.so
+/opt/pylon/lib/libpylonbase.so
+/opt/pylon/lib/libpylonc-6.1.1.so
+/opt/pylon/lib/libpylonc.so
+/opt/pylon/lib/libpylon_TL_bcon-6.1.1.so
+/opt/pylon/lib/libpylon_TL_bcon.so
+/opt/pylon/lib/libpylon_TL_camemu-6.1.1.so
+/opt/pylon/lib/libpylon_TL_camemu.so
+/opt/pylon/lib/libpylon_TL_gige-6.1.1.so
+/opt/pylon/lib/libpylon_TL_gige.so
+/opt/pylon/lib/libpylon_TL_usb-6.1.1.so
+/opt/pylon/lib/libpylon_TL_usb.so
+/opt/pylon/lib/libpylonutility-6.1.1.so
+/opt/pylon/lib/libpylonutility.so
+/opt/pylon/lib/libuxapi-6.1.1.so
+/opt/pylon/lib/libuxapi.so
+/opt/pylon/lib/libXmlParser_gcc_v3_1_Basler_pylon.so
  )
 
 
