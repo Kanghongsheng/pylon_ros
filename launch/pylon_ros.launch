@@ -1,0 +1,4 @@
+<launch>
+  <node name= "pylon_ros_node" pkg="pylon_ros" type="pylon_ros_node"/>
+</launch>
+

@@ -1,0 +1,7 @@
+<launch>
+  <node name= "pylon_ros_node_1" pkg="pylon_ros" type="pylon_ros_node_1"/>
+  <node name= "pylon_ros_node_2" pkg="pylon_ros" type="pylon_ros_node_2"/>
+  <node name= "pylon_ros_node_3" pkg="pylon_ros" type="pylon_ros_node_3"/>
+
+</launch>
+

@@ -1,0 +1,8 @@
+prefix=/home/linux/catkin_ws/src/pylon_ros/cmake-build-debug/devel
+
+Name: pylon_ros
+Description: Description of pylon_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/linux/catkin_ws/src/pylon_ros/cmake-build-debug/devel/lib 
+Requires: 

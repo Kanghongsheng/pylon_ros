@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/linux/catkin_ws/src/pylon_ros/cmake-build-debug/devel/setup.sh
