@@ -44,8 +44,6 @@ int main(int argc, char* argv[]){
         Pylon::CPylonImage target;
         while (camera.IsGrabbing()) {
             camera.RetrieveResult(5000, ptrGrabResult, Pylon::TimeoutHandling_ThrowException);
-            camera.AcquisitionFrameRateEnable.SetValue(true);
-            camera.AcquisitionFrameRateAbs.SetValue(30.0);
             std_msgs::Header header;
             header.frame_id = "Pylon_camera_1";
             header.stamp    = ros::Time::now();
